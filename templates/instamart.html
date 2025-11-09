@@ -1,0 +1,63 @@
+{% extends "dummy.html" %}
+{% load static %}
+
+{% block title %}Instamart{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1 class="text-center mb-3" style="color: rgb(240, 90, 40);">Welcome to Instamart</h1>
+    <p class="text-center mb-4" >Grab your daily essentials and groceries, delivered fast!</p>
+    
+    <div class="row g-4">
+        <div class="col-md-3 d-flex">
+            <div class="card h-100 w-100 d-flex flex-column">
+                <img src="{% static 'Spinach.jpg' %}" class="card-img-top img-fluid" alt="Spinach" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="card-title">Spinach</h5>
+                    <p class="card-text">₹60</p>
+                    <a href="#" class="btn mt-auto text-white" style="background-color:rgb(240, 90, 40);">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="card h-100 w-100 d-flex flex-column">
+                <img src="{% static 'Onion.jpg' %}" class="card-img-top img-fluid" alt="Onion 1Kg" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="card-title">Onion 1Kg</h5>
+                    <p class="card-text">₹35</p>
+                    <a href="#" class="btn mt-auto text-white" style="background-color:rgb(240, 90, 40);">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="card h-100 w-100 d-flex flex-column">
+                <img src="{% static 'Eggs.jpg' %}" class="card-img-top img-fluid" alt="Eggs Pack of 30" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="card-title">Eggs Pack of 30</h5>
+                    <p class="card-text">₹230</p>
+                    <a href="#" class="btn mt-auto text-white" style="background-color:rgb(240, 90, 40);">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nandini Curd -->
+        <div class="col-md-3 d-flex">
+            <div class="card h-100 w-100 d-flex flex-column">
+                <img src="{% static 'Nandini Curd.jpg' %}" class="card-img-top img-fluid" alt="Nandini Curd - 500g" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="card-title">Nandini Curd - 500g</h5>
+                    <p class="card-text">₹28</p>
+                    <a href="#" class="btn mt-auto text-white" style="background-color:rgb(240, 90, 40);">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="{% url 'food:food' %}" class="btn text-white" style="background-color:rgb(240, 90, 40);">Order Food</a>
+    </div>
+</div>
+{% endblock %}
+

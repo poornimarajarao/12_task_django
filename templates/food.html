@@ -1,0 +1,61 @@
+{% extends "dummy.html" %}
+{% load static %}
+
+{% block title %}Food{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1 class="text-center" style="color: rgb(240, 90, 40);">Craving Something Delicious?</h1>
+    <p class="text-center">Order your favorite meals from local restaurants, delivered fast!</p>
+
+    <div class="row mt-4">
+        <div class="col-md-3 mb-3">
+            <div class="card h-100">
+                <img src="{% static 'Chicken Cheesy Roll.jpg' %}" class="card-img-top img-fluid" alt="Chicken Cheesy Roll" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chicken Cheesy Roll</h5>
+                    <p class="card-text">₹150</p>
+                    <a href="#" class="btn mt-auto w-100 text-white" style="background-color:rgb(240, 90, 40);">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card h-100">
+                <img src="{% static 'Curd Rice.jpg' %}" class="card-img-top img-fluid" alt="Curd Rice" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Curd Rice</h5>
+                    <p class="card-text">₹80</p>
+                    <a href="#" class="btn mt-auto w-100 text-white" style="background-color:rgb(240, 90, 40);">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card h-100">
+                <img src="{% static 'Poori - 3.jpg' %}" class="card-img-top img-fluid" alt="Poori" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Poori</h5>
+                    <p class="card-text">₹70</p>
+                    <a href="#" class="btn mt-auto w-100 text-white" style="background-color:rgb(240, 90, 40);">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card h-100">
+                <img src="{% static 'Pineapple Eggless  Pastrie.jpg' %}" class="card-img-top img-fluid" alt="Cake" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pineapple Eggless Pastrie</h5>
+                    <p class="card-text">₹200</p>
+                    <a href="#" class="btn mt-auto w-100 text-white" style="background-color:rgb(240, 90, 40);">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="{% url 'instamart:instamart' %}" class="btn text-white" style="background-color:rgb(240, 90, 40);">Go to Instamart</a>
+    </div>
+</div>
+{% endblock %}
